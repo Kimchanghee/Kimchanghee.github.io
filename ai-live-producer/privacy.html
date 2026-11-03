@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Live Producer — 개인정보 처리방침 / Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1b1b1f; --muted:#5d5d66; --bg:#ffffff; --line:#e4e4ea; --accent:#7c5cff; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#ececf1; --muted:#a3a3ad; --bg:#121216; --line:#2a2a33; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, "Segoe UI", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
+  main { max-width:780px; margin:0 auto; padding:40px 22px 80px; }
+  h1 { font-size:28px; line-height:1.3; margin:0 0 6px; }
+  h2 { font-size:20px; margin:36px 0 8px; padding-top:18px; border-top:1px solid var(--line); }
+  h3 { font-size:16px; margin:22px 0 4px; }
+  .meta { color:var(--muted); font-size:14px; }
+  nav a { color:var(--accent); margin-right:14px; font-size:14px; }
+  table { border-collapse:collapse; width:100%; font-size:14px; margin:8px 0; }
+  th, td { border:1px solid var(--line); padding:7px 9px; text-align:left; vertical-align:top; }
+  th { background:color-mix(in srgb, var(--accent) 8%, transparent); }
+  .lang { margin-top:56px; }
+</style>
+</head>
+<body>
+<main>
+<h1>AI Live Producer 개인정보 처리방침</h1>
+<p class="meta">시행일: 2026년 11월 3일 · 운영: AICOMPANY</p>
+<nav><a href="#ko">한국어</a><a href="#en">English</a></nav>
+
+<section id="ko">
+<p>AI Live Producer(이하 “프로그램”)는 틱톡 LIVE 크리에이터와 에이전시가 자기 방송을 기록·분석하도록 돕는 Windows PC용 프로그램입니다. 이 방침은 프로그램이 어떤 정보를 어떻게 다루는지 설명합니다.</p>
+
+<h2>1. 핵심 요약</h2>
+<ul>
+  <li>프로그램이 다루는 정보는 <b>사용자 PC 안에만</b> 저장됩니다. 운영사는 별도 서버를 운영하지 않으며, 사용자의 정보를 받거나 보관하지 않습니다.</li>
+  <li>틱톡 계정 정보는 크리에이터가 틱톡 로그인 화면에서 <b>직접 허락한 범위</b>만 가져옵니다.</li>
+  <li>정보를 판매하거나 광고에 쓰지 않습니다.</li>
+</ul>
+
+<h2>2. 다루는 정보</h2>
+<h3>가. 틱톡 공식 연결(TikTok Login Kit · Display API)로 받는 정보</h3>
+<p>크리에이터가 프로그램의 “틱톡으로 로그인”을 눌러 허락한 경우에만, 본인 계정의 다음 정보를 받습니다.</p>
+<table>
+  <tr><th>권한 범위(scope)</th><th>받는 정보</th><th>쓰는 곳</th></tr>
+  <tr><td>user.info.basic</td><td>open_id, union_id, 표시 이름, 프로필 사진 주소</td><td>어느 계정이 연결됐는지 보여 주고, 다른 계정의 기록이 섞이지 않게 확인</td></tr>
+  <tr><td>user.info.profile</td><td>아이디(username), 인증 배지 여부, 소개글</td><td>연결된 계정이 이 크리에이터 기록의 주인인지 확인</td></tr>
+  <tr><td>user.info.stats</td><td>팔로워·팔로잉·받은 좋아요·영상 수</td><td>방송 전후 팔로워 변화 등 성장 지표 기록</td></tr>
+  <tr><td>video.list</td><td>최근 영상의 제목·올린 날짜·조회·좋아요·댓글·공유 수</td><td>영상 성과를 방송 기록과 함께 보여 줌</td></tr>
+</table>
+<p>로그인 토큰(access token·refresh token)은 사용자 PC의 크리에이터 기록 파일에만 저장되고, 로그아웃하면 지워집니다.</p>
+
+<h3>나. 방송 화면에서 읽는 정보</h3>
+<p>사용자가 켠 경우, 프로그램은 사용자 PC 화면에 보이는 틱톡 LIVE 채팅 영역을 글자 인식(OCR)으로 읽어 채팅·선물·입장 알림 같은 <b>방송에 공개적으로 표시된 내용</b>(시청자 닉네임과 메시지 포함)을 기록합니다. 글자 인식은 PC 안에서만 처리됩니다.</p>
+
+<h3>다. 사용자가 직접 넣는 정보</h3>
+<p>LIVE Backstage·TikTok Studio·LIVE Center에서 사용자가 내려받아 프로그램에 넣은 CSV·엑셀 파일의 내용, 그리고 사용자가 입력한 틱톡 개발자 앱 키는 PC 안에만 저장됩니다.</p>
+
+<h2>3. 외부로 보내는 경우</h2>
+<p>아래는 <b>사용자가 해당 기능을 직접 켰을 때만</b> 일어납니다.</p>
+<ul>
+  <li><b>TikTok</b>: 공식 연결 시 로그인·정보 요청을 틱톡 서버(open.tiktokapis.com)로 보냅니다.</li>
+  <li><b>웹으로 보기</b>: 사용자가 켜면 Cloudflare의 임시 주소(trycloudflare.com)를 통해, 그 주소를 받은 사람이 방송 현황 화면을 볼 수 있습니다. 끄면 주소가 사라집니다.</li>
+  <li><b>음성 받아쓰기(선택)</b>: 사용자가 OpenAI 또는 ElevenLabs를 고르고 본인 API 키를 넣은 경우, 마이크 음성이 해당 회사로 보내져 글자로 바뀝니다. 기본값은 PC 안에서 처리하는 방식입니다.</li>
+</ul>
+<p>그 밖에 글자 인식 모델 파일을 내려받는 등 개인정보가 포함되지 않은 통신만 있습니다.</p>
+
+<h2>4. 보관 기간과 삭제</h2>
+<ul>
+  <li>기록은 사용자가 지울 때까지 사용자 PC의 프로그램 data 폴더에 남습니다. 폴더나 해당 크리에이터 기록 파일을 지우면 모두 삭제됩니다.</li>
+  <li>틱톡 연결은 프로그램의 “로그아웃”으로 끊을 수 있고, 틱톡 앱의 설정 및 개인정보 › 보안 및 권한 › 앱 및 서비스 권한에서도 언제든 권한을 취소할 수 있습니다.</li>
+</ul>
+
+<h2>5. 이용 대상</h2>
+<p>프로그램은 틱톡 LIVE를 진행하는 성인 크리에이터와 그 소속 에이전시를 위한 업무용 도구이며, 만 18세 미만을 대상으로 하지 않습니다.</p>
+
+<h2>6. 안전 조치</h2>
+<p>정보는 사용자 PC 안에만 저장되므로, PC 계정 암호와 백신 등 일반적인 PC 보안을 유지해 주세요. 틱톡 로그인은 틱톡의 공식 OAuth(PKCE) 방식을 쓰며, 프로그램은 틱톡 비밀번호를 받지 않습니다.</p>
+
+<h2>7. 변경</h2>
+<p>방침이 바뀌면 이 페이지에 새 시행일과 함께 게시합니다.</p>
+
+<h2>8. 문의</h2>
+<p>운영: AICOMPANY (대한민국). 문의는 프로그램을 제공받은 에이전시 또는 운영사로 해 주세요.</p>
+</section>
+
+<section id="en" class="lang">
+<h1>AI Live Producer Privacy Policy</h1>
+<p class="meta">Effective: November 3, 2026 · Operated by AICOMPANY</p>
+<p>AI Live Producer (the “App”) is a Windows desktop application that helps TikTok LIVE creators and their agencies record and analyze their own broadcasts. This policy explains what information the App handles and how.</p>
+
+<h2>1. Summary</h2>
+<ul>
+  <li>All information the App handles is stored <b>only on the user’s own PC</b>. The operator runs no server and does not receive or keep user data.</li>
+  <li>TikTok account data is obtained only within the scopes the creator <b>explicitly authorizes</b> on TikTok’s login screen.</li>
+  <li>We do not sell data or use it for advertising.</li>
+</ul>
+
+<h2>2. Information the App handles</h2>
+<h3>a. Data from TikTok Login Kit and Display API</h3>
+<p>Only after the creator clicks “Log in with TikTok” and authorizes the App, the App receives the following about the creator’s own account:</p>
+<table>
+  <tr><th>Scope</th><th>Data</th><th>Purpose</th></tr>
+  <tr><td>user.info.basic</td><td>open_id, union_id, display name, avatar URL</td><td>Show which account is connected and make sure records of different accounts are never mixed</td></tr>
+  <tr><td>user.info.profile</td><td>username, verified status, bio</td><td>Confirm the connected account owns the creator record it is saved to</td></tr>
+  <tr><td>user.info.stats</td><td>follower, following, likes and video counts</td><td>Track growth, e.g. follower change before and after a LIVE</td></tr>
+  <tr><td>video.list</td><td>recent videos’ title, post date, view, like, comment and share counts</td><td>Show video performance next to broadcast records</td></tr>
+</table>
+<p>Access and refresh tokens are stored only in the creator’s record file on the user’s PC and are deleted on logout.</p>
+
+<h3>b. Information read from the broadcast screen</h3>
+<p>If the user turns it on, the App reads the TikTok LIVE chat area shown on the user’s own screen with on-device text recognition (OCR) and records what is <b>publicly displayed in the broadcast</b> (chat messages, gifts and join notices, including viewer nicknames). Recognition runs entirely on the PC.</p>
+
+<h3>c. Information the user provides</h3>
+<p>CSV/Excel files the user exports from LIVE Backstage, TikTok Studio or LIVE Center and imports into the App, and the TikTok developer app keys the user enters, are stored only on the PC.</p>
+
+<h2>3. When data leaves the PC</h2>
+<p>Only when the user turns on the related feature:</p>
+<ul>
+  <li><b>TikTok</b>: login and data requests are sent to TikTok (open.tiktokapis.com).</li>
+  <li><b>Web view</b>: a temporary Cloudflare link (trycloudflare.com) lets people who receive the link view the live dashboard. Turning it off removes the link.</li>
+  <li><b>Speech-to-text (optional)</b>: if the user selects OpenAI or ElevenLabs and enters their own API key, microphone audio is sent to that provider for transcription. The default runs on the PC.</li>
+</ul>
+<p>Other network traffic, such as downloading text-recognition model files, contains no personal data.</p>
+
+<h2>4. Retention and deletion</h2>
+<ul>
+  <li>Records stay in the App’s data folder on the user’s PC until the user deletes them. Deleting the folder or a creator’s record file removes everything.</li>
+  <li>The TikTok connection can be ended with “Log out” in the App, and access can be revoked at any time in the TikTok app under Settings and privacy › Security and permissions › Apps and services permissions.</li>
+</ul>
+
+<h2>5. Who the App is for</h2>
+<p>The App is a business tool for adult TikTok LIVE creators and their agencies and is not directed to anyone under 18.</p>
+
+<h2>6. Security</h2>
+<p>Because data is stored only on the user’s PC, please keep the PC protected with an account password and anti-virus software. TikTok login uses TikTok’s official OAuth (PKCE) flow; the App never receives TikTok passwords.</p>
+
+<h2>7. Changes</h2>
+<p>Changes will be posted on this page with a new effective date.</p>
+
+<h2>8. Contact</h2>
+<p>Operator: AICOMPANY (Republic of Korea). Please contact the agency that provided the App or the operator.</p>
+</section>
+</main>
+</body>
+</html>
